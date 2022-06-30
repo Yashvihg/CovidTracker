@@ -1,0 +1,26 @@
+<%- include("partials/header") -%> <%- include("nav") -%>
+<link rel="stylesheet" href="./css/blogs.css" />
+<div class="banner">
+    <img src="./img/banner.png" width="1420px" />
+  </div>
+  <div class="section">
+  <section class="section-blog">
+<!--blog1-->
+
+    
+
+<% data.forEach(element => { %>
+<div class="blog-section zoom2">
+    <div class="blog">
+      <div class="blog-topic"><%= element.Title  %> </div>
+      <div class="blog-img">
+        <img src="./img/blog1.png" width="300px"/>
+      </div>
+      <div class="blog-content">
+          <p class="small-text">
+            <%= element.Body  %></p>
+      </div>
+    </div>
+</div>
+<% }); %> 
+</div>

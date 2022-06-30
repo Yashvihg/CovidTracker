@@ -1,0 +1,123 @@
+
+
+.main-section {
+   
+    border: 0px solid white;
+    border-radius: 50px;
+    max-width: 90%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 125px;
+    background-color: white;
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+  .big-text {
+    width: 90%;
+    font-size: 50px;
+  }
+
+.line{
+    /* background-color: darkgray; */
+    padding: 33px 0px 10px 8px;
+    font-size: 22pt;
+}
+
+.form{
+    /* background-color: #ffa39b4f; */
+    padding: 10px 20px;
+    border-radius: 15px;
+    width: 90%;
+    margin: auto;
+   
+    display: flex;
+    flex-direction: column;
+
+}
+.table{
+    /* background-color: yellow; */
+    /* margin-top: 300px; */
+    width: 100%;
+    margin: auto;
+
+}
+
+.meraform{
+    /* background-color: peru; */
+    margin: 10px;
+    font-size: 14pt;
+    padding: 5px;
+    /* background: #ffeae9; */
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.button{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  margin-left: 12px;
+  /* justify-content: center; */
+}
+.btn{
+  align-items: center;
+  width: 20%;
+  padding: 12px 5px 12px 5px;
+  border: 2px solid rgba(255, 77, 92, 0.733);
+  border-radius: 30px;
+  background: none;
+ 
+  cursor: pointer;
+}
+.btn:hover{
+  align-items: center;
+  padding: 12px;
+  border: 2px solid rgb(255, 77, 93);
+  border-radius: 30px;
+  background: #ffeae9;
+ 
+  cursor: pointer;
+   
+}
+.medium-text {
+  width: 90%;
+  font-size: 29px;
+  opacity: 0.7;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+  }
+ 
+  tr:hover {background-color:#ffa39b4f;}
+  
+  th {
+    background-color: #ffa39b4f;
+    color:black;
+  }
+
+.total{
+    color: blue;
+}
+.active{
+    color: red;
+}
+.recover{
+    color: green;
+}
+.death{
+    color: grey;
+}
+
+
+
+.bakchod{
+    display: flex;
+    /* justify-content: center; */
+    /* background-color: aquamarine; */
+    margin-bottom: 20px;
+}

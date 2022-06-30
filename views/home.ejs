@@ -1,0 +1,108 @@
+<%- include("partials/header") -%> <%- include("nav") -%> <%-
+include("first-section") -%>
+<section class="second-section">
+  <div class="cases">
+    <div class="lefthalf">
+      <div class="counter">
+        <div class="upper-part">
+          <div class="contents">
+            <div class="upper-text">
+              <p class="small-text">Total Cases</p>
+              <p class="big-text"><%= confirmed %></p>
+            </div>
+            <div class="counter-image">
+              <img src="./img/cases.svg" alt="bc" />
+            </div>
+          </div>
+        </div>
+
+        <div class="lower-part">
+          <p class="small-text">
+            <button class="btn-cases">
+              <p class="small-text">7 percent</p>
+            </button>
+            data
+          </p>
+        </div>
+      </div>
+      <div class="counter">
+        <div class="upper-part">
+          <div class="contents">
+            <div class="upper-text">
+              <p class="small-text">Total Deaths</p>
+              <p class="big-text"><%= deaths %></p>
+            </div>
+            <div class="counter-image">
+              <img src="/img/deaths.svg" alt="bc" />
+            </div>
+          </div>
+        </div>
+
+        <div class="lower-part">
+          <p class="small-text">
+            <button class="btn-cases">
+              <p class="small-text">8 percent</p>
+            </button>
+            data
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="righthalf">
+      <div class="counter">
+        <div class="upper-part">
+          <div class="contents">
+            <div class="upper-text">
+              <p class="small-text">Active Cases</p>
+              <p class="big-text"><%= active %></p>
+            </div>
+            <div class="counter-image">
+              <img src="./img/active_cases.svg" alt="bc" />
+            </div>
+          </div>
+        </div>
+
+        <div class="lower-part">
+          <p class="small-text">
+            <button class="btn-cases">
+              <p class="small-text">12 percent</p>
+            </button>
+            l data
+          </p>
+        </div>
+      </div>
+      <div class="counter">
+        <div class="upper-part">
+          <div class="contents">
+            <div class="upper-text">
+              <p class="small-text">Total Recoveries</p>
+              <p class="big-text"><%= recover %></p>
+            </div>
+            <div class="counter-image">
+              <img src="./img/recoveries.svg" alt="bc" />
+            </div>
+          </div>
+        </div>
+
+        <div class="lower-part">
+          <p class="small-text">
+            <button class="btn-cases">
+              <p class="small-text">9 percent</p>
+            </button>
+            data
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="view-more">
+  <button id="more" class="table-btn">
+    <a href="/table"> View More </a>
+  </button>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+<%- include("precaution") -%> 
+<%- include("symptom") -%>
+<%- include("ending") -%>
+<%- include("partials/footer") -%>

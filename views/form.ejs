@@ -1,0 +1,51 @@
+<%- include("partials/header") -%> <%- include("nav") -%>
+<link rel="stylesheet" href="./css/blogs.css" />
+<div class="banner">
+    <img src="./img/banner.png" width="1420px" />
+  </div>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" />
+  
+
+    <script src="https://code.angularjs.org/1.4.0-rc.1/angular.js"></script>
+    <script src="/js/formValidator.js"></script>
+</head>
+<body ng-app="validationApp" ng-controller="mainController">
+<div class="container">
+    
+
+    <div class="page-header"><h1>Need help? </h1></div>
+   
+    
+    <form name="userForm" ng-submit="submitForm(userForm.$valid)" action="/connect" method="POST" novalidate>
+
+        <!-- NAME -->
+        <div class="form-group" ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
+            <label>Name*</label>
+            <input type="text" name="name" class="form-control" ng-model="user.name" required>
+            <p ng-show="userForm.name.$invalid && !userForm.name.$pristine" class="help-block">You name is required.</p>
+        </div>
+        
+            
+        <!-- EMAIL -->
+        <div class="form-group" ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }">
+            <label>Email</label>
+            <input type="email" name="email" class="form-control" ng-model="user.email">
+            <p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">Enter a valid email.</p>
+        </div>
+
+         <!-- message -->
+         <div class="form-group" ng-class="{ 'has-error' : userForm.message.$invalid && !userForm.message.$pristine }">
+            <label>Your query(within 150 characters )</label>
+            <input type="text" name="message" class="form-control" ng-model="user.message" ng-minlength="3" ng-maxlength="150">
+            <p ng-show="userForm.message.$error.minlength" class="help-block">Message is too short.</p>
+            <p ng-show="userForm.message.$error.maxlength" class="help-block">Message is too long.</p>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+        
+    </form>
+    
+    </div>
+
+</body>
+</html>
